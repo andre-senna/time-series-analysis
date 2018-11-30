@@ -70,13 +70,13 @@ Calling service...
         {'DOWN': 0.54}
 ```
 
-The output format is `{SIGNAL: CONFIDENCE}`, where:
+The output format is `{signal: confidence}`, where:
 
-  - SIGNAL: is either `UP` or `DOWN`
-  - CONFIDENCE: is a number in `[0.5, 1]`. It's a measure of how reliable is
-    the signaled trend. **Important:** CONFIDENCE is not a model's estimate of
-    how much the target asset's price will raise or fall. CONFIDENCE values 
-    near 0.5 mean that the model could not detect neither UP or DOWN trends.
+  - `signal`: is either `UP` or `DOWN`
+  - `confidence`: is a number in `[0.5, 1]`. It's a measure of how reliable is
+    the signaled trend. **Important:** `confidence` is not a model's estimate of
+    how much the target asset's price will raise or fall. `confidence` values 
+    near 0.5 indicates that the model could not detect neither UP or DOWN trends.
 
 ### What to expect from this service?
 
